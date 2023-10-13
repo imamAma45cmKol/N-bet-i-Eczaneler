@@ -4,9 +4,11 @@ from selenium.webdriver.chrome.service import Service
 import time
 import time
 import os
+import colorama
+from colorama import Fore, Back, Style
+colorama.init()
 
-
-
+print(Fore.RED)
 print("Sürümünüze göre önce sürücü yüklemelisiniz  \n \n1) Chrome girin \n2) Sağ üstteki ··· noktaya tıklayın \n3) Yardım sekmesinden hakkında bölümüne tıklayın ve sürümü öğrenin\n4) 'https://chromedriver.chromium.org/downloads' sitesinden sürümünüze göre olan sürücüyü yükleyin \n5) yüklediğiniz rar dosyasını açın ve içindeki dosyakarı F-NE dosyasının içine atın... ")
 bitis =input("Yükledim... Enter ")
 os.system(" {}".format(bitis))
